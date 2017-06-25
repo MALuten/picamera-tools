@@ -1,2 +1,2 @@
 # picamera-tools
-Some simple scripts for using the Raspberry Pi camera module
+Some simple (python) scripts for using the Raspberry Pi camera module
