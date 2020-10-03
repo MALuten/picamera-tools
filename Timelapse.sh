@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "Geef aan om de hoeveel seconden er een foto gemaakt moet worden"
+echo "Enter the interval between photos in seconds: "
 read input
-echo "Het script zal zich elke $input seconden herhalen"
+echo "$input second(s) set as interval"
 
 while true
 do

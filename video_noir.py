@@ -10,10 +10,10 @@ try:
     GPIO.output(7, GPIO.HIGH)
     with picamera.PiCamera() as camera:
 	camera.resolution = (1920, 1080)
-	print "Aan het opnemen!"
+	print "Recording!"
 	camera.start_recording("/home/pi/camera/" + str(now.strftime("%Y-%m-%d_%H%M%S")) + ".h264")
 	while (True):
-		print "Aan het opnemen!"
+		print "Recording!"
 
 except KeyboardInterrupt:
 	GPIO.output(7, GPIO.LOW)

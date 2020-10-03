@@ -7,10 +7,10 @@ now = datetime.now()
 try:
     with picamera.PiCamera() as camera:
         camera.resolution = (1920, 1080)
-        print "Aan het opnemen!"
+        print "Recording!"
         camera.start_recording("/home/pi/camera/video/" + str(now.strftime("%Y-%m-%d_%H%M%S")) + ".h264")
         while (True):
-                print "Aan het opnemen!"
+                print "Recording!"
 
 except KeyboardInterrupt:
         #camera.stop_recording()
